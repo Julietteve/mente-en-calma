@@ -39,6 +39,11 @@ export const Social = styled.div`
  
 `;
 
+
+export const Captcha = styled.div`
+ margin:2%;
+`;
+
 export const Quote = styled.div`
 width:100%;
   border: 5px solid #E7E3F6;
@@ -51,6 +56,11 @@ text-decoration: none;
 color: #A5678E;
 font-weight: bold;
 font-family: 'Montserrat', sans-serif;
+transition: 0.3s ease-in-out;
+
+&:hover{
+    transform: scale(1.1)
+}
    
 `;
 

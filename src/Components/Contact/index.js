@@ -1,6 +1,6 @@
 import React from 'react';
 import {Section, Underline} from "../About/styles";
-import {Container, Input, Message, Form, FormContainer, SocialContainer, Content, Warn, Send, Details,Icon, Quote} from './styles'
+import {Container, Input, Message, Captcha, Form, FormContainer, SocialContainer, Content, Warn, Send, Details,Icon, Quote} from './styles'
 
 const Contact = () => {
     return (
@@ -21,12 +21,14 @@ const Contact = () => {
                </Quote>
            </SocialContainer>
            <FormContainer>
-               <Form>
+               <Form action="POST" data-netlify="true">
+               <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
-                   <Input placeholder="Nombre" type="text"/>
-                   <Input placeholder="Apellido" type="text"/>
-                   <Input placeholder="E-mail" type="text"/>
+                   <Input name="name" placeholder="Nombre" type="text"/>
+                   <Input name="surname" placeholder="Apellido" type="text"/>
+                   <Input name="email" placeholder="E-mail" type="text"/>
                    <Message placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5"/>
+                   <Captcha data-netlify-recaptcha= "true"></Captcha>
                    <Send type="submit">Enviar</Send>
                </Form>
            </FormContainer>
