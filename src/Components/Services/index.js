@@ -6,8 +6,8 @@ import {Section,Underline} from '../About/styles'
 
 const Services = () => {
     return (
-        <Main>
-           <Section>Servicios</Section>
+        <Main  data-aos="fade-down" >
+           <Section id="Servicios">Servicios</Section>
            <Underline></Underline>
        <Container>
               {

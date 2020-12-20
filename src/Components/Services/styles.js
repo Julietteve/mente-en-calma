@@ -7,7 +7,7 @@ export const Container = styled.section`
     align-items: center;
     flex-direction: row;
     text-align: center;
-    margin-top: 5%;
+    padding-top: 5%;
     padding-left:10%;
     padding-right:10%;
     box-sizing:border-box;

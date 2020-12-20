@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    margin-top: 10%;
+    padding-top: 10%;
     box-sizing:border-box;
 `;
 
@@ -14,6 +14,7 @@ export const Content = styled.div`
 
 export const SocialContainer = styled.div`
     width: 40%;
+    padding-right:2%;
 `;
 
 export const FormContainer = styled.div`
@@ -23,6 +24,36 @@ export const FormContainer = styled.div`
 export const Form = styled.form`
    
 `;
+
+export const Details = styled.div`
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  margin: 2%;
+  margin-top:3%;
+  line-height: 2rem;
+  text-align: justify;
+   
+`;
+
+export const Social = styled.div`
+ 
+`;
+
+export const Quote = styled.div`
+width:100%;
+  border: 5px solid #E7E3F6;
+  padding:6%;
+  box-sizing:border-box;
+`;
+
+export const Icon = styled.a`
+text-decoration: none;
+color: #A5678E;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+   
+`;
+
 
 export const Warn = styled.form`
     font-family: 'Montserrat', sans-serif;

@@ -13,7 +13,7 @@ const Nameplate = () => {
         }
       };
     return (
-        <Container>
+        <Container   data-aos="fade" id="Principal">
              <Lottie options={defaultOptions}
               height={400}
               width={400}

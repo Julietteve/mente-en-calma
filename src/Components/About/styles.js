@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
- margin-top:15%;
+    padding-top: 15%;
     display: flex;
     flex-direction:column;
     position: relative;
@@ -9,14 +9,14 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-    margin-top:5%;
+    margin-top:6%;
     position: absolute;
     z-index: -1;
     width:100%;
     height:100vh;
     -webkit-transform: scale(1) rotate(0deg) skewY(20deg) skewX(0deg);
     transform: scale(1) rotate(0deg) skewY(-2deg) skewX(0deg);
-    background-color:#E7E3F6;
+    background-color:#F3F2F9;
 `;
 
 export const Section = styled.section`
@@ -25,6 +25,7 @@ export const Section = styled.section`
     font-size: 3rem;
     text-align: center;
     letter-spacing: 5px;
+    padding-top:3%;
 `;
 
 export const Underline = styled.div`
@@ -36,8 +37,17 @@ export const Underline = styled.div`
 
 `;
 
+export const Image= styled.div`
+    width:30%;
+    margin-right: 5%;
+    display:flex;
+    align-items:center;
+`;
+
+
 export const Bio = styled.p`
-    font-family: 'Montserrat', sans-serif;
+        width:70%;
+        font-family: 'Montserrat', sans-serif;
       color: gray;
       column-count: 2;
       column-gap: 40px;
@@ -56,7 +66,7 @@ export const Article = styled.article`
 
 export const ProfilePic = styled.img`
     margin-right: 5%;
-
+    width:100%;
 `;
 
 

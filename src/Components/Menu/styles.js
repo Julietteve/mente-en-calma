@@ -44,6 +44,7 @@ export const Item = styled.a`
     font-family: 'Josefin Sans', sans-serif;
     vertical-align: middle;
     cursor: pointer;
+    color:#1D1D1F;
 
     &:nth-child(3) {
         color: #A5678E;
