@@ -51,8 +51,8 @@ export const Bio = styled.p`
       color: gray;
       column-count: 2;
       column-gap: 40px;
-      font-size:1.1rem;
-      line-height:2rem;
+      font-size:1rem;
+      line-height:1.8rem;
 `;
 
 export const Article = styled.article`

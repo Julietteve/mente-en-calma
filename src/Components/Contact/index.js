@@ -28,7 +28,7 @@ const Contact = () => {
                    <Input name="surname" type="text" placeholder="Apellido"/>
                    <Input name="email" type="email" placeholder="E-mail"/>
                    <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5"/>
-                   <Captcha data-netlify-recaptcha="true"></Captcha>
+                   <div data-netlify-recaptcha="true"></div>
                    <Send type="submit">Enviar</Send>
                </Form>
            </FormContainer>

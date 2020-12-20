@@ -30,7 +30,7 @@ export const Details = styled.div`
   color: gray;
   margin: 2%;
   margin-top:3%;
-  line-height: 2rem;
+  line-height: 1.8rem;
   text-align: justify;
    
 `;
