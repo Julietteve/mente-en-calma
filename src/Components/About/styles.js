@@ -15,7 +15,7 @@ export const Background = styled.div`
     width:100%;
     height:100vh;
     -webkit-transform: scale(1) rotate(0deg) skewY(20deg) skewX(0deg);
-    transform: scale(1) rotate(0deg) skewY(-5deg) skewX(0deg);
+    transform: scale(1) rotate(0deg) skewY(-2deg) skewX(0deg);
     background-color:#E7E3F6;
 `;
 
