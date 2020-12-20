@@ -21,14 +21,14 @@ const Contact = () => {
                </Quote>
            </SocialContainer>
            <FormContainer>
-               <Form name="contact" method="post">
+               <Form data-netlify="true" name="contact" method="POST">
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
                    <Input name="name" type="text" placeholder="Nombre" />
                    <Input name="surname" type="text" placeholder="Apellido"/>
                    <Input name="email" type="email" placeholder="E-mail"/>
                    <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5"/>
-                   <Captcha data-netlify-recaptcha= "true"></Captcha>
+                   <Captcha data-netlify-recaptcha="true"></Captcha>
                    <Send type="submit">Enviar</Send>
                </Form>
            </FormContainer>
