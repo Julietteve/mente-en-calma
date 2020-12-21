@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -14,12 +15,22 @@ export const Title = styled.h1`
     text-transform:uppercase;
     margin-bottom:10px;
     letter-spacing:3px;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+        text-align: center;
+  }
 `;
 
 export const Heading = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:center;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction:column;
+  }
+    
     
 `;
 
@@ -30,6 +41,10 @@ export const Subtitle = styled.p`
     letter-spacing: 3px;
     margin-right:1rem;
     margin-left:1rem;
+
+    @media only screen and (max-width: 768px) {
+       text-align:center;
+  }
 
 `;
 

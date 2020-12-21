@@ -11,6 +11,10 @@ export const Container = styled.section`
     padding-left:10%;
     padding-right:10%;
     box-sizing:border-box;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+  }
 `;
 
 export const Service = styled.div`

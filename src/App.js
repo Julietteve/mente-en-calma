@@ -1,21 +1,23 @@
 import React, {useEffect} from 'react'
 import Menu from "./Components/Menu";
-import {createGlobalStyle} from 'styled-components/macro';
+import styled, {createGlobalStyle} from 'styled-components/macro';
 import Nameplate from "./Components/Nameplate";
 import About from "./Components/About";
 import Services from "./Components/Services";
 import Contact from "./Components/Contact";
-import Footer from "./Footer";
+import Footer from './Components/Footer'
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import MobileNav from './Components/MobileNav';
 
 const GlobalStyle = createGlobalStyle`
-  html{
+  body, html{
     margin:0;
     padding:0;
     box-sizing: border-box;
     user-select: none;
     color:#1D1D1F;
+
 
     ::-webkit-scrollbar {
   width: 10px;
@@ -35,14 +37,18 @@ const GlobalStyle = createGlobalStyle`
 }
   }    
 `;
+
+
 function App() {
 
   useEffect(()=>{
       Aos.init({duration: 2000})
   }, [])
 
+
   return (
     <div>
+      <MobileNav/>
       <GlobalStyle/>
       <Menu/>
       <Nameplate/>

@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-    margin-top:6%;
+    margin-top:8%;
     position: absolute;
     z-index: -1;
     width:100%;
@@ -34,6 +34,9 @@ export const Underline = styled.div`
     border-bottom: 5px solid;
     margin: 0 auto;
 
+    @media only screen and (max-width: 768px) {
+      width:30%;
+  }
 
 `;
 
@@ -42,6 +45,9 @@ export const Image= styled.div`
     margin-right: 5%;
     display:flex;
     align-items:center;
+    @media only screen and (max-width: 768px) {
+      width:100%;
+  }
 `;
 
 
@@ -53,6 +59,15 @@ export const Bio = styled.p`
       column-gap: 40px;
       font-size:1rem;
       line-height:1.8rem;
+
+      @media only screen and (max-width: 768px) {
+    column-count: auto;
+      column-gap: 0px;
+      width:100%;
+      font-size:0.9rem;
+    line-height: 1.5rem;
+
+  }
 `;
 
 export const Article = styled.article`
@@ -61,6 +76,11 @@ export const Article = styled.article`
     flex-direction:row;
     padding:5%;
     box-sizing:border-box;
+
+    @media only screen and (max-width: 768px) {
+    flex-direction:column;
+    margin-top:10%;
+  }
 `;
 
 

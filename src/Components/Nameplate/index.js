@@ -9,11 +9,11 @@ const Nameplate = () => {
         autoplay: true,
         animationData: relax,
         rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice'
+        preserveAspectRatio: 'xMidYMid slice'
         }
       };
     return (
-        <Container   data-aos="fade" id="Principal">
+        <Container data-aos="fade" id="Principal">
              <Lottie options={defaultOptions}
               height={400}
               width={400}
@@ -25,7 +25,6 @@ const Nameplate = () => {
                 <Subtitle>Transformacional</Subtitle>
                 <Subtitle>|</Subtitle>
                 <Subtitle>Sin Prejuicios</Subtitle>
-                
               </Heading>
         </Container>
     );

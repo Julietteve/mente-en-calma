@@ -16,6 +16,10 @@ export const MenuLinks = styled.div`
     top:-5rem;
     background-color:white;
 
+    @media only screen and (max-width: 768px) {
+    display:none;
+  }
+
 
 `;
 

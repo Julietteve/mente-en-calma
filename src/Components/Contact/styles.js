@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
     padding-top: 10%;
@@ -10,15 +10,25 @@ export const Content = styled.div`
   justify-content:center;
   flex-direction: row;
   margin:5%;
+  @media only screen and (max-width: 768px) {
+      flex-direction:column;
+  }
 `;
 
 export const SocialContainer = styled.div`
     width: 40%;
     padding-right:2%;
+
+    @media only screen and (max-width: 768px) {
+      width:100%;
+  }
 `;
 
 export const FormContainer = styled.div`
    width: 60%;
+   @media only screen and (max-width: 768px) {
+      width:100%;
+  }
 `;
 
 export const Form = styled.form`
@@ -32,6 +42,12 @@ export const Details = styled.div`
   margin-top:3%;
   line-height: 1.8rem;
   text-align: justify;
+
+  @media only screen and (max-width: 768px) {
+    margin-top:6%;
+    font-size:0.9rem;
+    line-height: 1.5rem;
+  }
    
 `;
 
@@ -49,6 +65,10 @@ width:100%;
   border: 5px solid #E7E3F6;
   padding:6%;
   box-sizing:border-box;
+
+  @media only screen and (max-width: 768px) {
+    margin-top:10%;
+  }
 `;
 
 export const Icon = styled.a`
@@ -73,6 +93,10 @@ export const Warn = styled.form`
    font-weight:bold;
    color:grey;
    word-break:break-all;
+
+   @media only screen and (max-width: 768px) {
+     font-size:0.7rem;
+  }
 
 `;
 
@@ -131,6 +155,10 @@ export const Send = styled.button`
     &:focus{
         outline:none;
     }
+
+    @media only screen and (max-width: 768px) {
+      width:30%;
+  }
 
 `;
 
