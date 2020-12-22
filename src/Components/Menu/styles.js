@@ -2,6 +2,10 @@ import styled from 'styled-components/macro'
 
 export const Container = styled.div`
     width: 100%;
+
+    @media only screen and (max-width: 768px) {
+    display:none;
+  }
 `;
 
 export const MenuLinks = styled.div`
@@ -15,23 +19,18 @@ export const MenuLinks = styled.div`
     position:relative;
     top:-5rem;
     background-color:white;
-
-    @media only screen and (max-width: 768px) {
-    display:none;
-  }
-
-
 `;
 
 export const MenuIcon=styled.div`
     position:absolute;
-    z-index:10;
-    right:2rem;
-    top:2rem;
+    right:3rem;
+    top:3rem;
     width:auto;
     font-size:2.5rem;
     cursor: pointer;
+    z-index:10;
 `;
+
 export const Icon = styled.div`
  &:hover ${MenuLinks} {
    top:1rem;

@@ -3,6 +3,10 @@ import styled from "styled-components/macro";
 export const Container = styled.div`
     padding-top: 10%;
     box-sizing:border-box;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 10%;
+  }
 `;
 
 export const Content = styled.div`
@@ -12,6 +16,7 @@ export const Content = styled.div`
   margin:5%;
   @media only screen and (max-width: 768px) {
       flex-direction:column;
+      align-items: center;
   }
 `;
 
@@ -21,6 +26,7 @@ export const SocialContainer = styled.div`
 
     @media only screen and (max-width: 768px) {
       width:100%;
+      padding-right:0%;
   }
 `;
 
@@ -28,6 +34,7 @@ export const FormContainer = styled.div`
    width: 60%;
    @media only screen and (max-width: 768px) {
       width:100%;
+      padding-right:0%;
   }
 `;
 
@@ -158,6 +165,7 @@ export const Send = styled.button`
 
     @media only screen and (max-width: 768px) {
       width:30%;
+      font-size:1rem;
   }
 
 `;

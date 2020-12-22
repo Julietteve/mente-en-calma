@@ -1,23 +1,22 @@
 import styled from 'styled-components'
+import {IoMdClose} from 'react-icons/io';
 
 
-export const Container = styled.div`
+export const Container = styled.nav`
     display:none;
     @media only screen and (max-width: 768px) {
     display:flex;
+    background-color:white;
     justify-content:center;
     flex-direction:column;
     position: fixed;
     z-index: 999;
     width:100%;
     height:100%;
-    background-color:#F5F2D5;
     align-items:center;
-    top:0;
-    left:0;
     transition: 0.3 ease-in-out;
-    /* opacity: ${({isOpen})=>(isOpen ? '100%' : '0')};
-    top: ${({isOpen})=>(isOpen ? '0' : '-100%')}; */
+    opacity: ${({isOpen})=>(isOpen ? '100%' : '0')};
+    top: ${({isOpen})=>(isOpen ? '0' : '-100%')};
   }
 `;
 
@@ -53,4 +52,17 @@ export const Item = styled.a`
     color: #A5678E;
     }
 
+`;
+
+export const CloseIcon = styled(IoMdClose)`
+   color:#1D1D1F;
+`;
+
+export const Icon = styled.div`
+  position:absolute;
+    right:3rem;
+    top:3rem;
+    width:auto;
+    font-size:2.5rem;
+    cursor: pointer;
 `;

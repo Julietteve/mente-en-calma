@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Menu from "./Components/Menu";
-import styled, {createGlobalStyle} from 'styled-components/macro';
+import {createGlobalStyle} from 'styled-components/macro';
 import Nameplate from "./Components/Nameplate";
 import About from "./Components/About";
 import Services from "./Components/Services";
@@ -41,17 +41,20 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
 
+  const [isOpen, setIsOpen]= useState(false);
+  const toggle = () =>{setIsOpen(!isOpen)}
+
+
   useEffect(()=>{
       Aos.init({duration: 2000})
   }, [])
 
-
   return (
     <div>
-      <MobileNav/>
       <GlobalStyle/>
-      <Menu/>
-      <Nameplate/>
+      <Menu />
+      <MobileNav isOpen={isOpen} toggle={toggle}/>
+      <Nameplate toggle={toggle}/>
       <About/>
       <Services/>
       <Contact/>

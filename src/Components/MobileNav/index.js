@@ -1,11 +1,14 @@
 import React from 'react';
 import {MenuItem} from './data';
-import { Container,Name,MenuLinks,Item } from "./styles";
+import { Container,Name,MenuLinks,Item, Icon, CloseIcon} from "./styles";
 
-const MobileNav = () => {
+const MobileNav = ({isOpen,toggle}) => {
     return (
-       <Container>
-           <Name>Agostina Faccone</Name>
+       <Container isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
+                <CloseIcon/>
+            </Icon>
+           <Name >Agostina Faccone</Name>
            <MenuLinks>
               {MenuItem.map((item, index)=><Item href={`#${item}`} key={index}>{item}</Item>)}
             </MenuLinks>

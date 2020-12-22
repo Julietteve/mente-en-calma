@@ -4,7 +4,7 @@ import {Container, Input, Message, Captcha, Form, FormContainer, SocialContainer
 
 const Contact = () => {
     return (
-       <Container  data-aos="fade-down">
+       <Container data-aos="fade-down">
            <Section  id="Contacto">Contacto</Section>
            <Underline/>
            <Content>
@@ -24,10 +24,10 @@ const Contact = () => {
                <Form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true" action="/pages/success">
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
-                   <Input name="name" type="text" placeholder="Nombre" />
+                   <Input name="name" type="text" placeholder="Nombre" required />
                    <Input name="surname" type="text" placeholder="Apellido"/>
-                   <Input name="email" type="email" placeholder="E-mail"/>
-                   <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5"/>
+                   <Input name="email" type="email" placeholder="E-mail" required/>
+                   <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5" required/>
                    <Captcha data-netlify-recaptcha="true"></Captcha>
                    <Send type="submit">Enviar</Send>
                </Form>

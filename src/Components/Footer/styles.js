@@ -12,6 +12,8 @@ export const Container = styled.footer`
 
     @media only screen and (max-width: 768px) {
     font-size:0.6rem;
+    margin-top:15%;
+    margin-bottom:5%;
   }
 `;
 

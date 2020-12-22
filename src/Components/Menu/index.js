@@ -6,8 +6,8 @@ import { MenuItem} from "./data";
 const Menu = () => {
     return (
         <Container data-aos="fade">
-            <Icon>
-                <MenuIcon>
+            <Icon >
+                <MenuIcon >
             <FiMenu/>
                 </MenuIcon>
             <MenuLinks>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
     width:100%;
@@ -6,6 +6,16 @@ export const Container = styled.div`
     justify-content:center;
     align-items:center;
     flex-direction: column;
+`;
+
+export const LottieContainer = styled.div`
+
+@media only screen and (max-width: 768px) {
+   margin-top:50%;
+   display:flex;
+   justify-content:center;
+   width:80%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -17,7 +27,8 @@ export const Title = styled.h1`
     letter-spacing:3px;
 
     @media only screen and (max-width: 768px) {
-        font-size: 2rem;
+        font-size:2.5rem;
+        margin:2%;
         text-align: center;
   }
 `;
@@ -29,6 +40,7 @@ export const Heading = styled.div`
 
     @media only screen and (max-width: 768px) {
         flex-direction:column;
+        margin-top:10%;
   }
     
     
@@ -48,3 +60,17 @@ export const Subtitle = styled.p`
 
 `;
 
+export const MenuIcon=styled.div`
+
+display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    transform: (-100%, 60%);
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #282723;
+  }
+`;

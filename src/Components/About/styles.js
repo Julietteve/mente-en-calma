@@ -6,6 +6,11 @@ export const Container = styled.div`
     flex-direction:column;
     position: relative;
     z-index: 1;
+
+    @media only screen and (max-width: 768px) {
+     margin-top:10%;
+  }
+
 `;
 
 export const Background = styled.div`
@@ -26,6 +31,11 @@ export const Section = styled.section`
     text-align: center;
     letter-spacing: 5px;
     padding-top:3%;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+  }
+
 `;
 
 export const Underline = styled.div`
@@ -66,6 +76,7 @@ export const Bio = styled.p`
       width:100%;
       font-size:0.9rem;
     line-height: 1.5rem;
+    text-align:justify;
 
   }
 `;
@@ -80,6 +91,7 @@ export const Article = styled.article`
     @media only screen and (max-width: 768px) {
     flex-direction:column;
     margin-top:10%;
+    margin:5%;
   }
 `;
 
@@ -87,11 +99,22 @@ export const Article = styled.article`
 export const ProfilePic = styled.img`
     margin-right: 5%;
     width:100%;
+
+    @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+
+  }
 `;
 
 
 export const Intro = styled.h2`
      font-family: 'Montserrat', sans-serif;
      line-height:2rem;
+     text-align:left;
+
+     @media only screen and (max-width: 768px) {
+   font-size:1.5rem;
+
+  }
 
 `;
