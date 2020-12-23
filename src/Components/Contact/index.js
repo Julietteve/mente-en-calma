@@ -1,16 +1,9 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import {Section, Underline} from "../About/styles";
 import {Container, Input, Message, Captcha, Form, FormContainer, SocialContainer, Content, Warn, Send, Details,Icon, Quote} from './styles'
 
 const Contact = () => {
-    const [success, setSuccess] = useState(false);
-    useEffect(() => {
-      if (window.location.search.includes("success=true")) {
-        setSuccess(true);
-      }
-    }, []);
-
-    const handleSubmit = (e) =>{e.preventDefault()}
+    
     return (
        <Container data-aos="fade-down">
            <Section  id="Contacto">Contacto</Section>
@@ -29,10 +22,9 @@ const Contact = () => {
                </Quote>
            </SocialContainer>
            <FormContainer>
-           {success && <p style={{ color: "green" }}>Thanks for your message! </p>}
                <Form  name="contact" 
                 method="POST" 
-                action="/contact/?success=true"
+                action="/contact/thanks.html"
                 data-netlify="true" >
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
@@ -41,7 +33,7 @@ const Contact = () => {
                    <Input name="email" type="email" placeholder="E-mail" required/>
                    <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5" required/>
                    <Captcha data-netlify-recaptcha="true"></Captcha>
-                   <Send onClick ={handleSubmit}type="submit">Enviar</Send>
+                   <Send type="submit">Enviar</Send>
                </Form>
            </FormContainer>
            </Content>
