@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import {Section, Underline} from "../About/styles";
 import {Container, Input, Message, Captcha, Form, FormContainer, SocialContainer, Content, Warn, Send, Details,Icon, Quote} from './styles'
 
 const Contact = () => {
+    const [success, setSuccess] = useState(false);
+    useEffect(() => {
+      if (window.location.search.includes("success=true")) {
+        setSuccess(true);
+      }
+    }, []);
     return (
        <Container data-aos="fade-down">
            <Section  id="Contacto">Contacto</Section>
@@ -21,7 +27,8 @@ const Contact = () => {
                </Quote>
            </SocialContainer>
            <FormContainer>
-               <Form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true" action="/thanks.html">
+           {success && <p style={{ color: "green" }}>Thanks for your message! </p>}
+               <Form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true"  action="/contact/?success=true">
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
                    <Input name="name" type="text" placeholder="Nombre" required />
