@@ -9,6 +9,8 @@ const Contact = () => {
         setSuccess(true);
       }
     }, []);
+
+    const handleSubmit = (e) =>{e.preventDefault()}
     return (
        <Container data-aos="fade-down">
            <Section  id="Contacto">Contacto</Section>
@@ -39,7 +41,7 @@ const Contact = () => {
                    <Input name="email" type="email" placeholder="E-mail" required/>
                    <Message name="message" placeholder="Escribi tu mensaje aqui ..." cols="30" rows="5" required/>
                    <Captcha data-netlify-recaptcha="true"></Captcha>
-                   <Send type="submit">Enviar</Send>
+                   <Send onClick ={handleSubmit}type="submit">Enviar</Send>
                </Form>
            </FormContainer>
            </Content>
