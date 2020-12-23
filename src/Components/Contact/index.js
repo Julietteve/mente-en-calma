@@ -28,7 +28,10 @@ const Contact = () => {
            </SocialContainer>
            <FormContainer>
            {success && <p style={{ color: "green" }}>Thanks for your message! </p>}
-               <Form data-netlify="true" name="contact" method="POST" data-netlify-recaptcha="true"  action="/contact/?success=true">
+               <Form  name="contact" 
+                method="POST" 
+                action="/contact/?success=true"
+                data-netlify="true" >
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
                    <Input name="name" type="text" placeholder="Nombre" required />
