@@ -24,7 +24,7 @@ const Contact = () => {
            <FormContainer>
                <Form  name="contact" 
                 method="POST" 
-                action="/contact/thanks.html"
+                action="/thanks.html"
                 data-netlify="true" >
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
