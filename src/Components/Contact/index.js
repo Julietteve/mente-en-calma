@@ -25,7 +25,7 @@ const Contact = () => {
                <Form  name="contact"
                 data-netlify-recaptcha="true" 
                 method="POST" 
-                action="/thanks"
+                action='/thanks.html'
                 data-netlify="true" >
                <input type="hidden" name="form-name" value="contact" />
                    <Warn> * Al completar este formulario, estás dando tu permiso para que me comunique con vos mediante el correo electrónico proporcionado.</Warn>
