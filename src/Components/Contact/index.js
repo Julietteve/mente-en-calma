@@ -23,7 +23,7 @@ const Contact = () => {
            </SocialContainer>
            <FormContainer>
                <Form  name="contact"
-               data-netlify-recaptcha="true" 
+                data-netlify-recaptcha="true" 
                 method="POST" 
                 action="/thanks"
                 data-netlify="true" >
