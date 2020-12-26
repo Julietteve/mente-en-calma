@@ -24,7 +24,7 @@ export const Background = styled.div`
     background-color:#F3F2F9;
 
     @media only screen and (max-width: 768px) {
-      height:220vh;
+      height:150vh;
   }
 `;
 
