@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Background = styled.div`
-    margin-top:8%;
+    margin-top:10%;
     position: absolute;
     z-index: -1;
     width:100%;
