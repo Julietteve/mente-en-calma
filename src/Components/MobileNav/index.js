@@ -1,9 +1,8 @@
 import React from 'react';
 import {MenuItem} from './data';
 import { Container,Name,MenuLinks,Item, Icon, CloseIcon,Social, Anchor} from "./styles";
-import {FaFacebookSquare} from 'react-icons/fa';
+import {FaFacebookSquare, FaInstagramSquare} from 'react-icons/fa';
 import { AiFillInstagram} from "react-icons/ai";
-
 const MobileNav = ({isOpen,toggle}) => {
     return (
        <Container isOpen={isOpen} onClick={toggle}>
@@ -19,7 +18,7 @@ const MobileNav = ({isOpen,toggle}) => {
                     <FaFacebookSquare/>
                 </Anchor>
                 <Anchor href="https://www.instagram.com/redes.mentales/">
-                    <AiFillInstagram/>
+                    <FaInstagramSquare/>
                 </Anchor>
             </Social>
        </Container>
