@@ -14,7 +14,7 @@ const About = () => {
            <ProfilePic src="images/profile.jpg"/>
                </Image>
            <Bio>
-            <Intro>Mi nombre es Agostina Faccone y soy Licenciada en Psicología egresada de la Universidad de Buenos Aires.</Intro>
+            <Intro>Mi nombre es Agostina Faccone y soy Licenciada en psicología y acompañante terapéutica egresada de la Universidad de Buenos Aires. </Intro>
           {bio}</Bio>
            </Article>
        </Container>

@@ -36,6 +36,23 @@ export const MenuLinks = styled.div`
    width:100%;
 `;
 
+export const Social = styled.div`
+    display:flex;
+    justify-content:center;
+   flex-direction:row;
+   text-align:center;
+   margin-top:10%;
+   padding:10%;
+`;
+
+export const Anchor = styled.a`
+    color: #A5678E;
+    font-size: 2rem;
+    display:inline-block;
+    padding:10%;
+
+`;
+
 export const Item = styled.a`
     font-size:1rem;
     text-transform:uppercase;
